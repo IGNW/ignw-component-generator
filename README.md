@@ -31,8 +31,7 @@ This command will:
 
 ## Full Example
 ```
-➜ pge-moonshot-client git:(master) ✗ npm run plop:component
-
+> npm run plop:component
 > plop --plopfile ./node_modules/ignw-component-generator/plopfile.ts
 
 ? react component name app bar
