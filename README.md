@@ -33,7 +33,6 @@ This command will:
 ```
 ➜ pge-moonshot-client git:(master) ✗ npm run plop:component
 
-> pge-react-web-client@0.1.0 plop:component /Users/desmondjones/code/github.com/ignw/pge-moonshot-client
 > plop --plopfile ./node_modules/ignw-component-generator/plopfile.ts
 
 ? react component name app bar
@@ -41,6 +40,5 @@ This command will:
 ✔ ++ /src/components/app-bar/AppBar.tsx
 ✔ ++ /src/components/app-bar/AppBar.stories.tsx
 ✔ ++ /src/components/app-bar/AppBar.test.tsx
-➜ pge-moonshot-client git:(master) ✗
 
 ```
