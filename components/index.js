@@ -19,22 +19,22 @@ module.exports = class extends Generator {
 
         this.fs.copyTpl(
             this.templatePath('index.ts'),
-            this.destinationPath(`./client/src/components/${componentName}/index.ts`),
+            this.destinationPath(`./src/components/${componentName.toLowerCase()}/index.ts`),
             { componentName }
         )
         this.fs.copyTpl(
             this.templatePath('component.tsx'),
-            this.destinationPath(`./client/src/components/${componentName}/${componentName}.tsx`),
+            this.destinationPath(`./src/components/${componentName.toLowerCase()}/${componentName}.tsx`),
             { componentName }
         )
         this.fs.copyTpl(
             this.templatePath('stories.tsx'),
-            this.destinationPath(`./client/src/components/${componentName}/${componentName}.stories.tsx`),
+            this.destinationPath(`./src/components/${componentName.toLowerCase()}/${componentName}.stories.tsx`),
             { componentName }
         )
         this.fs.copyTpl(
             this.templatePath('test.tsx'),
-            this.destinationPath(`./client/src/components/${componentName}/${componentName}.test.tsx`),
+            this.destinationPath(`./src/components/${componentName.toLowerCase()}/${componentName}.test.tsx`),
             { componentName }
         )
 	}
