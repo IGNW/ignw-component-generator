@@ -2,12 +2,12 @@
   "name": "generator-ignw-components",
   "version": "1.0.0",
   "description": "React Component Scaffolding Tool",
-  "main": "./components",
+  "main": "./components/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "generators"
+    "components"
   ],
   "repository": {
     "type": "git",
