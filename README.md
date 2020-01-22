@@ -37,10 +37,10 @@ This command will:
 > plop --plopfile ./node_modules/ignw-component-generator/plopfile.ts
 
 ? react component name app bar
-✔ ++ /Users/desmondjones/code/github.com/ignw/pge-moonshot-client/src/components/app-bar/index.ts
-✔ ++ /Users/desmondjones/code/github.com/ignw/pge-moonshot-client/src/components/app-bar/AppBar.tsx
-✔ ++ /Users/desmondjones/code/github.com/ignw/pge-moonshot-client/src/components/app-bar/AppBar.stories.tsx
-✔ ++ /Users/desmondjones/code/github.com/ignw/pge-moonshot-client/src/components/app-bar/AppBar.test.tsx
+✔ ++ /src/components/app-bar/index.ts
+✔ ++ /src/components/app-bar/AppBar.tsx
+✔ ++ /src/components/app-bar/AppBar.stories.tsx
+✔ ++ /src/components/app-bar/AppBar.test.tsx
 ➜ pge-moonshot-client git:(master) ✗
 
 ```
