@@ -12,7 +12,7 @@ module.exports = function (plop) {
     actions: [
       {
           type: 'add',
-          path: `${cwd}/(src/components/{{dashCase name}}/index.ts`,
+          path: `${cwd}/src/components/{{dashCase name}}/index.ts`,
           templateFile: './templates/index.ts'
       },
       {
