@@ -2,6 +2,7 @@
   "name": "generator-ignw-components",
   "version": "1.0.0",
   "description": "React Component Scaffolding Tool",
+  "main": "./components",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
