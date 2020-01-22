@@ -1,5 +1,11 @@
 import React from 'react'
-import storiesOf from '.storybook/util'
 import {{pascalCase name}} from '.'
 
-storiesOf('{{pascalCase name}}', module).add('Default', () => <{{pascalCase name}} />)
+export default {
+  title: "{{pascalCase name}}",
+  component: {{pascalCase name}},
+}
+
+export const {{pascalCase name}} = () => (
+  <{{pascalCase name}} />
+)
