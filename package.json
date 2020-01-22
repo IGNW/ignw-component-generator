@@ -22,8 +22,8 @@
     "url": "https://github.com/IGNW/generator-ignwcomponents/issues"
   },
   "homepage": "https://github.com/IGNW/generator-ignwcomponents#readme",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "plop": "^2.5.3"
-  }
+  },
+  "devDependencies": {}
 }
