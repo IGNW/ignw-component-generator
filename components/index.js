@@ -1,5 +1,6 @@
 const Generator = require('yeoman-generator')
-const camelcase = require('camelcase')
+const camelCase = require('camelcase')
+const kebobCase = require('kebab-case')
 
 module.exports = class extends Generator {
 
@@ -15,26 +16,27 @@ module.exports = class extends Generator {
 	}
 
 	prompting() {
-        const componentName = camelcase(this.options.name, { pascalCase: true })
+        const componentName = camelCase(this.options.name, { pascalCase: true })
+        const componentDirName = kebobCase(this.options.name)
 
         this.fs.copyTpl(
             this.templatePath('index.ts'),
-            this.destinationPath(`./src/components/${componentName.toLowerCase()}/index.ts`),
+            this.destinationPath(`./src/components/${componentDirName}/index.ts`),
             { componentName }
         )
         this.fs.copyTpl(
             this.templatePath('component.tsx'),
-            this.destinationPath(`./src/components/${componentName.toLowerCase()}/${componentName}.tsx`),
+            this.destinationPath(`./src/components/${componentDirName}/${componentName}.tsx`),
             { componentName }
         )
         this.fs.copyTpl(
             this.templatePath('stories.tsx'),
-            this.destinationPath(`./src/components/${componentName.toLowerCase()}/${componentName}.stories.tsx`),
+            this.destinationPath(`./src/components/${componentDirName}/${componentName}.stories.tsx`),
             { componentName }
         )
         this.fs.copyTpl(
             this.templatePath('test.tsx'),
-            this.destinationPath(`./src/components/${componentName.toLowerCase()}/${componentName}.test.tsx`),
+            this.destinationPath(`./src/components/${componentDirName}/${componentName}.test.tsx`),
             { componentName }
         )
 	}
