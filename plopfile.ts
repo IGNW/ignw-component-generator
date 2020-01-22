@@ -1,6 +1,7 @@
 const Generator = require('plop')
 
 module.exports = function (plop) {
+    const cwd = process.cwd()
     plop.setGenerator('component', {
         description: 'react component files',
         prompts: [{
@@ -11,22 +12,22 @@ module.exports = function (plop) {
         actions: [
             {
                 type: 'add',
-                path: 'src/components/{{dashCase name}}/index.ts',
+                path: `${cwd}/(src/components/{{dashCase name}}/index.ts`,
                 templateFile: './templates/index.ts'
             },
             {
                 type: 'add',
-                path: 'src/components/{{dashCase name}}/{{pascalCase name}}.tsx',
+                path: `${cwd}/src/components/{{dashCase name}}/{{pascalCase name}}.tsx`,
                 templateFile: './templates/component.tsx'
             },
             {
                 type: 'add',
-                path: 'src/components/{{dashCase name}}/{{pascalCase name}}.stories.tsx',
+                path: `${cwd}/src/components/{{dashCase name}}/{{pascalCase name}}.stories.tsx`,
                 templateFile: './templates/stories.tsx'
             },
             {
                 type: 'add',
-                path: 'src/components/{{dashCase name}}/{{pascalCase name}}.test.tsx',
+                path: `${cwd}/src/components/{{dashCase name}}/{{pascalCase name}}.test.tsx`,
                 templateFile: './templates/test.tsx'
             }
         ]
