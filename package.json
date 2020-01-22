@@ -1,5 +1,5 @@
 {
-  "name": "generator-ignwcomponents",
+  "name": "ignw-component-generator",
   "version": "1.0.0",
   "description": "React Component Scaffolding Tool",
   "scripts": {
@@ -9,7 +9,7 @@
   "main": "./plopfile.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IGNW/generator-ignwcomponents.git"
+    "url": "git+https://github.com/IGNW/ignw-component-generator.git"
   },
   "keywords": [
     "components",
@@ -19,9 +19,9 @@
   "author": "IGNW",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IGNW/generator-ignwcomponents/issues"
+    "url": "https://github.com/IGNW/ignw-component-generator/issues"
   },
-  "homepage": "https://github.com/IGNW/generator-ignwcomponents#readme",
+  "homepage": "https://github.com/IGNW/ignw-component-generator#readme",
   "dependencies": {
     "plop": "^2.5.3"
   },
