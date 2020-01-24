@@ -6,6 +6,6 @@ export default {
   component: {{pascalCase name}},
 }
 
-export const {{pascalCase name}} = () => (
+export const {{pascalCase name}}Styled = () => (
   <{{pascalCase name}} />
 )
